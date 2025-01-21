@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/logo.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+		<style>
+			body {
+				background-position: left top;
+				font-family: 'Inter', sansserif;
+				margin: 0;
+				background-repeat: no-repeat;
+				background-color: #1EDF93;
+			}
+	
+			* {
+				box-sizing: border-box;
+			}
+	
+			a {
+				text-decoration: none;
+				color: black;
+			}
+	
+			nav {
+				position: sticky;
+				top: 0;
+				left: 0;
+				right: 0;
+				margin: 0 0px 0 0px;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+				background-color: #2779A7;
+			}
+	
+			nav .nav-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+	
+			.nav-links {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				margin: -1em 0;
+				flex: 1 0 auto;
+			}
+	
+			.nav-links .link {
+				position: relative;
+				margin: 1em;
+				font-size: 0.85rem;
+				letter-spacing: 1px;
+				color: black;
+			}
+	
+			.nav-logo {
+				position: relative;
+				line-height: 1;
+				font-size: 1.1rem;
+				color: black;
+			}
+			.map{
+				margin: 20px 432px 0;				
+			}
+		</style>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+
+		<div style="display: contents">%sveltekit.body%</div>
+		<div class="map" id="map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad84eaf671a45c287c021f78939b41002806bf05659e74433fb125f68d089aa72&amp;width=1000&amp;height=900&amp;lang=ru_RU&amp;scroll=true&amp;apikey=7c954662-28f7-4600-9de5-30f984c8c053"></script>
+		</div>
+		
+	</body>
+</html>
